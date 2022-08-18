@@ -3,11 +3,7 @@ let pre = document.querySelector('.pre');
 let img = document.querySelectorAll('.silde img');
 let now = 0;
 
-img.forEach((item)=>{
-     item.addEventListener('click',()=>{
-        alert('hi');
-     })
-})
+
 
 setInterval(next_btn, 3000);
  next.addEventListener('click',next_btn,false)
