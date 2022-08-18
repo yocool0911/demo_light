@@ -1,0 +1,62 @@
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+img{
+    height: auto;
+    display: none;
+}
+
+.wrap{
+    width: 100%;
+    max-width: 900px;
+    padding: 5px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.active{
+    display: inline-block;
+}
+
+.next,.pre{
+    position: absolute;
+    font-size: 2em;
+    top:40%;
+}
+
+.next{
+    right:18%;
+}
+.pre{
+    left: 17%;
+    z-index: 2;
+}
+
+.silde{
+    position: absolute;
+    top:0;
+    left:50%;
+    transform: translateX(-50%);
+    width: 56%;
+}
+
+.silde img{
+    width: 100%;
+    animation:  silde 0.8s;
+}
+
+@keyframes silde{
+    0%{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
